@@ -1,0 +1,417 @@
+
+
+/*-- -------------------------- -->
+<---           LANDING          -->
+<--- -------------------------- -*/
+
+#hero {
+    min-height: 400px;
+    height: 400px;
+    background: url('/images/repair.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#hero:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .2;
+    top: 0;
+    left: 0;
+}
+
+#home-h {
+    width: 200px;
+    text-align: center;
+    font-size: 55px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 100;
+    height: 300px;
+    padding-top: 0px;
+}
+
+#home-h:before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    border: 10px solid rgba(253,118,45, .4);
+    z-index: -1;
+}
+
+#hero img {
+    display: none;
+}
+
+/*-- -------------------------- -->
+<---          SERVICES          -->
+<--- -------------------------- -*/
+
+#services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.topper {
+    margin-bottom: 50px;
+}
+
+.topper h2 {
+    font-size: 30px;
+}
+
+.topper span {
+    display: block;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.bee-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+}
+
+.bee-line svg {
+    width: 30px;
+    margin-right: 15px;
+    height: auto;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+
+.right {
+    height: 2px;
+    width: 200px;
+    background: #f9f9f9;
+}
+
+.service-item {
+    margin-bottom: 50px;
+}
+
+.service-item:last-child {
+    margin-bottom: 0;
+}
+
+.service-item svg {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.service-item h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.service-item p {
+    text-align: center;
+}
+
+/*-- -------------------------- -->
+<---         OUR MISSION        -->
+<--- -------------------------- -*/
+
+#our-mission {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url("/images/mission.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#our-mission:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+}
+
+.mission-container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.mission-container h2 span {
+    display: block;
+    color: var(--primary);
+}
+
+.mission-container p {
+    margin-bottom: 50px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.mission-button {
+    display: block;
+    margin: auto;
+    margin-left: 0;
+    position: relative;
+    z-index: 10;
+    color: #000;
+}
+
+/* Tablets */
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+
+    /*-- -------------------------- -->
+    <---           LANDING          -->
+    <--- -------------------------- -*/
+
+    #hero {
+        position: relative;
+        height: 400px;
+    }
+
+    #hero img {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: -2px;
+        z-index: 30;
+    }
+
+    /*-- -------------------------- -->
+    <---          SERVICES          -->
+    <--- -------------------------- -*/
+
+    #services {
+        padding-top: 100px;
+    }
+
+    .bee-line {
+        margin: auto;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .bee-line svg {
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        margin-left: 20px;
+    }
+
+    .left {
+        height: 2px;
+        width: 200px;
+        background: #f9f9f9;
+    }
+
+
+    .topper h2 {
+        text-align: center;
+    }
+
+    .topper h2 span {
+        display: inline-block;
+    }
+
+    .topper p {
+        text-align: center;
+    }
+
+    .services-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-top: 100px;
+    }
+
+    .service-item {
+        width: 280px;
+        margin: 0;
+        margin-bottom: 80px;
+    }
+
+    /*-- -------------------------- -->
+    <---         OUR MISSION        -->
+    <--- -------------------------- -*/
+
+    #our-mission {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .mission-container h2 {
+        text-align: left;
+    }
+
+    .mission-container p {
+        text-align: left;
+        width: 400px;
+    }
+
+    .mission-button {
+        display: block;
+        margin: auto;
+        margin-left: 0;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+
+    /*-- -------------------------- -->
+    <---          LANDING           -->
+    <--- -------------------------- -*/
+
+    #hero {
+        height: 600px;
+        background-attachment: fixed;
+        position: relative;
+    }
+
+    #home-h {
+        font-size: 70px;
+        -webkit-transform: translateY(50px);
+            -ms-transform: translateY(50px);
+                transform: translateY(50px);
+    }
+
+    #hero img {
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: 40;
+    }
+
+    /*-- -------------------------- -->
+    <---          SERVICES          -->
+    <--- -------------------------- -*/
+
+    #services {
+        padding-top: 100px;
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+    .topper h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .topper h2 span {
+        display: inline-block;
+    }
+
+    .bee-line {
+        margin: auto;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .bee-line svg {
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        margin-left: 20px;
+    }
+
+    .left {
+        height: 2px;
+        width: 200px;
+        background: #f9f9f9;
+    }
+
+    .topper p {
+        text-align: center;
+        width: 670px;
+        margin: auto;
+    }
+
+    .services-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        margin-top: 100px;
+    }
+
+    .service-item {
+        width: 280px;
+        margin: 0;
+        margin-bottom: 80px;
+    }
+
+    /*-- -------------------------- -->
+    <---         OUR MISSION        -->
+    <--- -------------------------- -*/
+
+    #our-mission {
+        background: url("/images/mission.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .mission-container h2 {
+        width: 500px;
+        font-size: 40px;
+    }
+
+    .mission-container p {
+        width: 500px;
+    }
+
+}
