@@ -57,7 +57,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .topper-flex,
 #brand,
-.call-strip-button {
+.call-strip-button,
+#logo-font-desktop {
 	display: none;
 }
 
@@ -560,7 +561,11 @@ h1, h2, h3, h4, h5, h6 {
 	.side-nav a {
 		opacity: 1;
 		visibility: visible;
-	}
+    }
+    
+    #logo-font-desktop {
+        display: block
+    }
 
 	.quote-nav-button {
 		display: block;
@@ -592,11 +597,12 @@ h1, h2, h3, h4, h5, h6 {
 		height: 100px;
     }
     
-    #logo-font {
+    #logo-font-desktop {
         color: #fff;
         position: absolute;
         left: 36px;
         font-size: 65px;
+        font-family: 'Aldrich', sans-serif;
     }
 
 	.navbar-menu {
