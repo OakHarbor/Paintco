@@ -1,3 +1,4 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
 /*-- -------------------------- -->
 <---           LANDING          -->
@@ -140,7 +141,7 @@
 <--- -------------------------- -*/
 
 #qualities {
-    background: url("/images/paintbrush.jpg");
+    background: url("/images/paintbrush-color.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -388,7 +389,7 @@
     height: 400px;
     width: 100%;
     margin-bottom: 50px;
-    background: url("/images/mission.jpg");
+    background: url("/images/victorian-2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -774,9 +775,7 @@
 
     #home-h {
         font-size: 70px;
-        -webkit-transform: translateY(50px);
-            -ms-transform: translateY(50px);
-                transform: translateY(50px);
+        margin-top: 100px;
     }
 
     #hero img {
@@ -813,8 +812,8 @@
     }
 
     .about-container img {
-        height: 400px;
-        width: 300px;
+        height: 280px;
+        width: auto;
     }
 
     .about-group {
@@ -878,6 +877,11 @@
     .quality-item {
         padding: 0;
         width: 300px;
+    }
+
+    .quality-item p {
+        height: 75px;
+        margin-top: 10px;
     }
 
     .icon-box {

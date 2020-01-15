@@ -1,6 +1,13 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
 
+@font-face {
+    font-family: 'billy_ohioregular';
+    src: url('/fonts/billy_ohio-webfont.woff2') format('woff2'),
+         url('/fonts/billy_ohio-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 /*-- -------------------------- -->
 <---           LANDING          -->
@@ -44,12 +51,16 @@
     z-index: 3;
     height: auto;
     margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .heroText h1 {
 	font-size: 2.2em;
 	color: #fff;
-	text-align: left;
+	text-align: center;
 	font-weight: bold;
 	overflow-y: hidden;
     margin: 0;
@@ -58,24 +69,38 @@
 .heroText h2 {
 	color: #fff;
 	font-size: 16px;
-	text-align: left;
+	text-align: center;
 	line-height: 1.6em;
-    padding: 30px 0;
+    padding: 0px 0 30px 0;
     position: relative;
     font-weight: normal;
 }
 
-.heroText h2:before {
-    content: '';
-    position: absolute;
+.hero-line {
     width: 60px;
     height: 5px;
     background: var(--primary);
-    top: 12px;
+    margin: 20px auto;
+}
+
+.heroText p {
+    color: #fff;
+    font-family: 'billy_ohioregular';
+    font-size: 35px;
+    position: absolute;
+    top: -50px;
+    margin: auto;
 }
 
 .about-button {
     width: 188px;
+    margin: auto;
+}
+
+.quote-button {
+    width: 188px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 /*-- -------------------------- -->
@@ -121,8 +146,11 @@
     margin-bottom: 20px;
 }
 
-.box-item p:nth-child(2), .box-item p:nth-child(2) {
-    font-size: 14px;
+.box-item a {
+    font-size: 25px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .box-item svg {
@@ -146,8 +174,8 @@
 }
 
 /* Main Content */
+
 .service-h2 {
-    margin-top: 50px;
     margin-bottom: 30px;
     text-align: center;
     font-weight: 900;
@@ -168,6 +196,11 @@
     font-weight: bold;
 }
 
+.icon-container {
+    position: relative;
+    z-index: 100;
+}
+
 .icon-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -183,6 +216,13 @@
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 50px;
+    color: #fff;
+}
+
+.service-h2, .service-p {
+    position: relative;
+    z-index: 100;
+    color: #fff;
 }
 
 .icon-group svg {
@@ -197,6 +237,7 @@
 
 .icon-group p {
     text-align: center;
+    color: #fff;
 }
 
 #customer-service {
@@ -214,8 +255,10 @@
 
 .service-button {
     width: 250px;
+    display: block;
     margin: auto;
-    margin-bottom: 50px;
+    position: relative;
+    z-index: 100;
 }
 
 /*-- -------------------------- -->
@@ -261,7 +304,7 @@
 <--- -------------------------- -*/
 
 .content {
-    background:url("../images/paintbrush.jpg");
+    background:url("../images/paintbrush-color.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 50px;
@@ -351,6 +394,25 @@
 /*-- -------------------------- -->
 <---          WHY US            -->
 <--- -------------------------- -*/
+
+#why-us {
+    background: url("/images/Old-Parchment-Textures.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+#why-us:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .6;
+}
  
 .why-us-float {
     -webkit-transform: translateY(-130px);
@@ -430,11 +492,9 @@
 <--- -------------------------- -*/
 
 .offer {
-    padding-top: 0;
+    padding-top: 50px;
     padding-bottom: 0px;
-    -webkit-transform: translateY(-50px);
-        -ms-transform: translateY(-50px);
-            transform: translateY(-50px);
+    padding-bottom: 50px;
 }
 
 .left p {
@@ -473,6 +533,12 @@
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 10px;
+}
+
+.offer-button {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
 /* Iphone 5 */
@@ -864,19 +930,23 @@
     }
 
     .heroText {
-        width: 700px;
+        width: 650px;
+        margin: auto !important;
+        margin-top: 50px !important;
     }
 
     #home-h {
-        width: 550px;
+        width: 650px;
+        font-size: 45px;
     }
 
     #home-p {
         width: 450px;
     }
 
-    .about-button {
-        margin-right: 30px;
+    .heroText p {
+        top: -66px;
+        font-size: 44px;
     }
 
     /*-- -------------------------- -->
@@ -899,13 +969,14 @@
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        max-width: 700px;
+        max-width: 650px;
         margin-bottom: 20px;
-        margin: auto;
+        margin: auto !important;
+        padding: 0;
     }
 
     .service-h2 {
-        margin-top: 100px;
+        margin-top: 0px;
     }
 
     .icon-group {
@@ -967,6 +1038,14 @@
     /*-- -------------------------- -->
     <---           OFFER            -->
     <--- -------------------------- -*/
+
+    .offer {
+        padding-bottom: 0;
+    }
+
+    .left {
+        margin-top: 50px;
+    }
 
     .left h2 {
         margin-bottom: 80px;
@@ -1162,6 +1241,7 @@
         height: auto;
         margin-left: 0;
         width: 1100px !important;
+        display: block;
     }
 
     .heroText h1 {
@@ -1172,6 +1252,11 @@
         overflow-y: hidden;
         margin: 0;
         width: 600px;
+        margin-bottom: 0px;
+    }
+
+    .hero-line {
+        display: none;
     }
 
     .heroText h2 {
@@ -1194,9 +1279,14 @@
         top: 12px;
     }
 
+    .heroText p {
+        top: 0px;
+    }
+
     .about-button {
         width: 188px;
         margin-right: 30px;
+        display: block;
     }
 
     /*-- -------------------------- -->
@@ -1235,10 +1325,11 @@
 
     #customer-service {
         padding-bottom: 50px;
+        padding-top: 250px;
     }
 
     .service-h2 {
-        margin-top: 200px;
+        margin-top: 0px;
     }
 
     .service-p {
@@ -1284,7 +1375,7 @@
     }
 
     .service-button {
-        margin: 50px auto 50px auto;
+        margin: 50px auto 100px auto;
     }
 
     /*-- -------------------------- -->
@@ -1499,7 +1590,7 @@
        -webkit-box-pack: center;
            -ms-flex-pack: center;
                justify-content: center;
-       margin-bottom: 20px;
+       margin-bottom: 5pxpx;
     }
 
     /*-- -------------------------- -->
@@ -1585,7 +1676,7 @@
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        width: 900px;
+        width: 1000px;
         margin: auto;
         position: relative;
     }
@@ -1607,6 +1698,19 @@
 
     .toggle-button2 {
         display: none;
+    }
+
+    .team-content {
+        width: 436px;
+    }
+
+    .team-card {
+        width: 436px;
+    }
+
+    .team-card img {
+        height: 300px;
+        width: auto;
     }
 
     .right-text {
