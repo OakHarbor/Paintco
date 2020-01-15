@@ -985,7 +985,7 @@
     }
 
     .service-button {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 
     /*-- -------------------------- -->
@@ -1095,6 +1095,10 @@
 
     .faq-h2 span {
         display: block;
+    }
+
+    .faq-button {
+        margin-bottom: 0;
     }
 
     /*-- -------------------------- -->
