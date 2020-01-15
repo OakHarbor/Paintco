@@ -859,6 +859,10 @@ footer {
 	margin-bottom: 50px;
 }
 
+.footer-item span {
+    color: #fff;
+}
+
 .item-content i {
 	margin-right: 15px;
 	color: var(--primary);
@@ -947,7 +951,13 @@ footer p {
 
 	.footer-item {
 		width: 200px;
-	}
+    }
+    
+    .item-4 span {
+        font-size: 45px !important;
+        position: relative !important;
+        left: 0 !important;
+    }
 
 	.item-4 {
 		width: 200px;
