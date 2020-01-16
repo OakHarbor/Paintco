@@ -93,7 +93,7 @@
 
 .heroText p {
     color: #fff;
-    font-family: 'billy_ohioregular';
+    font-family: 'Yesteryear', cursive;
     font-size: 35px;
     position: absolute;
     top: -50px;
@@ -144,6 +144,10 @@
     width: 175px;
 }
 
+.phone-number {
+    width: auto;
+}
+
 .box-item p {
     color: #f5f3f3;
 }
@@ -155,7 +159,7 @@
 }
 
 .box-item a {
-    font-size: 25px;
+    font-size: 30px;
     color: var(--primary);
     text-decoration: none;
     font-weight: bold;
@@ -1295,6 +1299,7 @@
 
     .heroText p {
         top: 0px;
+        font-size: 50px;
     }
 
     .about-button {
