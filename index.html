@@ -11,6 +11,8 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4f8f1d146c.js" crossorigin="anonymous"></script>
     
+    <!-- Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/core-styles.css">
@@ -72,7 +74,7 @@
         <div id="dark"></div>
         <div class="container hero-content">
             <div class="heroText">
-                <p aria-hidden="true">Simply Better</p>
+                <p aria-hidden="true" data-aos="fade-down">Simply Better</p>
                 <h1 id="home-h">Professional House Painting For Boise, ID</h1>
                 <div class="hero-line"></div>
                 <h2 id="home-p"> Paintco is dedicated to the details and quality of service you should expect from a contractor.  
@@ -608,5 +610,12 @@
     </footer>
     
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+      </script>
 </body>
 </html>
